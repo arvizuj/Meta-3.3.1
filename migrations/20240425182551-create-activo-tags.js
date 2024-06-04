@@ -14,14 +14,18 @@ module.exports = {
         references: {
           model: "Activos",
           key: "id"
-        }
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       tagId: {
         type: Sequelize.INTEGER,
         references: {
           model: "Tags",
           key: "id"
-        }
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       createdAt: {
         allowNull: false,
